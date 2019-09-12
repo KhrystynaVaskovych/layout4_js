@@ -1,0 +1,271 @@
+@media (max-width: 960px) {
+    html {
+        font-size: 13px;
+    }
+
+    .container {
+        width: 720px;
+    }
+
+    .clients__content__item {
+        padding: 10px 10px;
+    }
+
+    .what-we-do {
+        height: 500px;
+    }
+
+    .who-we-are {
+        &__gallery__item {
+            width: 220px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    .header__title {
+        width: 100%;
+    }
+
+    .statistics__item {
+        height: 100px;
+    }
+
+    .logos {
+        height: 100px;
+    }
+
+    .footer__block__item__form__btn {
+        font-size: 8px;
+    }
+
+    .who-we-are {
+        height: 600px;
+
+        &__gallery__item {
+            width: 160px;
+            height: 235px;
+        }
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+
+        &__block {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 310px;
+    }
+
+    html {
+        font-size: 13px;
+    }
+
+    .header {
+        height: 500px;
+
+        &__navigation {
+            @include flex-description($justify: space-around);
+
+            &__logo {
+                width: 20%;
+            }
+
+            &__bar {
+                display: none;
+            }
+
+            &__burger {
+                display: block;
+            }
+
+            &__side-bar {
+                @include flex-description($justify: space-around);
+                width: 20%;
+            }
+        }
+
+        &__title {
+            &__main {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .story {
+        height: 900px;
+
+        &__gallery {
+            flex-wrap: wrap;
+
+            &__item {
+                margin-top: 20px;
+                width: 100%;
+
+                .hidden__block {
+                    display: none;
+                }
+
+                &:hover {
+                    .hidden__block {
+                        display: block;
+                        padding: 20%;
+                        background: linear-gradient(to top, $yellow 0%, rgba(243, 129, 129, 0.9) 50%);
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .statistics__item {
+        height: 70px;
+
+        &__number {
+            font-size: 2rem;
+        }
+
+        .small-title {
+            text-align: center;
+        }
+    }
+
+    .services {
+        .lining {
+            display: none;
+        }
+
+        &__description {
+            flex-wrap: wrap;
+            margin-left: 30px;
+
+            &__item {
+                @include flex-description($justify: flex-start);
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+
+    .design {
+        height: 370px;
+
+        &__main-pic {
+            width: 50%;
+        }
+
+        &__side-pic {
+            width: 30%;
+        }
+    }
+
+    .what-we-do {
+        height: 730px;
+
+        &__block {
+            flex-wrap: wrap;
+
+            &__pic {
+                width: 100%;
+            }
+
+            &__menu {
+                margin-top: 10px;
+                width: 100%;
+
+                &__item {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .quotation {
+        height: 200px;
+
+        &__block {
+            width: 100%;
+            text-align: center;
+
+            &__pic {
+                width: 20%;
+                margin: 0 3px;
+            }
+        }
+    }
+
+    .who-we-are {
+        height: 1400px;
+
+        &__gallery {
+            height: 80%;
+            flex-wrap: wrap;
+
+            &__item {
+                margin: 10px 0;
+                width: 80%;
+                height: auto;
+            }
+        }
+    }
+
+    .clients {
+        height: 800px;
+
+        &__content {
+            flex-wrap: wrap;
+
+            &__item {
+                width: 100%;
+            }
+        }
+    }
+
+    .blogs {
+        height: 1100px;
+
+        &__content {
+            flex-wrap: wrap;
+
+            &__item {
+                width: 100%;
+
+                &__pic {
+                    margin-bottom: 20px;
+                }
+
+                &__calendar {
+                    @include positioning($top: 40%, $left: 0%);
+                }
+            }
+        }
+    }
+
+    .footer {
+        height: 900px;
+
+        &__block {
+            height: 100%;
+            flex-wrap: wrap;
+
+            &__item:nth-child(odd) {
+                width: 100%;
+            }
+
+            &__item:nth-child(2) {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

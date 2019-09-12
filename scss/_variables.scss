@@ -1,0 +1,50 @@
+$backgroung-position: center right/cover no-repeat;
+$regular: 'Montserrat-regular';
+$regular-bold: 'Montserrat-bold';
+$paragraphs: 'Roboto';
+$paragraphs-light:'Roboto-Light';
+$extra-cursive: 'Kaushan';
+$base: white;
+$turquise: #95e1d3;
+$grey: grey;
+$extralight: lightgray;
+$lightgrey: #cccccc;
+$tomato: #f38181;
+$basegray: #f8f8f8;
+$light-tomato: rgba(243, 129, 129, 0.9);
+$yellow: rgba(252, 227, 138, 0.9);
+
+
+@mixin flex-description($direction: null, $justify: null, $align: null, $wrap: null) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+@mixin positioning($top: null, $left: null, $right: null, $bottom: null) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}
+
+@mixin bg-gradient{
+    background: linear-gradient(to top, $yellow 0%, rgba(243, 129, 129, 0.9) 50%);
+    opacity: 1;
+}
+
+@mixin font-styling($size: null, $line-height: null,
+    $letter-spacing: null, $color: null,
+    $decoration: null, $align: null, $family: null, $style: null) {
+    text-align: $align;
+    font-size: $size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    color: $color;
+    text-decoration: $decoration;
+    font-family: $family;
+    font-style: $style;
+}
